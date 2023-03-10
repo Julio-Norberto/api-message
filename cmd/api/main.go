@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"encoding/json"
 
+	"github.com/Julio-Norberto/api-message/internal/infra/akafka"
 	"github.com/Julio-Norberto/api-message/internal/infra/repository"
-	"github.com/Julio-Norberto/api-message/internal/infra/repository/akafka"
 	"github.com/Julio-Norberto/api-message/internal/usecases"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
