@@ -3,8 +3,8 @@ package usecases
 import "github.com/Julio-Norberto/api-message/internal/entity"
 
 type CreateProductInputDto struct {
-	Name  string
-	Price float64
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
 }
 
 type CreateProductOutputDto struct {
