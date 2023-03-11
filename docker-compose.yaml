@@ -4,16 +4,15 @@ services:
   goapp:
     build: .
     volumes:
-      - .:/go/app
-    platform: linux/amd64
+      - .:/go/src
     ports:
       - "8000:8000"
     extra_hosts:
       - "host.docker.internal:172.17.0.1"
 
-  mysql:
-    image: mysql:5.7
-    container_name: mysql
+  db:
+    image: mysql
+    container_name: mysqlBD
     ports:
       - "3306:3306"
     environment:
